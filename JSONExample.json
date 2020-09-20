@@ -1,3 +1,110 @@
-{
-  "phoneNumbers":[{"type":"Hello", "number":"212 555-1234"},
-                  {"type":"fax",  "number":"212 555-1234"}]}
+[
+  {
+    "phrases": {
+      "pattern": "Hello (.*)",
+      "answer": "Hi"
+    }
+  },
+  {
+    "phrases": {
+      "pattern": "My name is (.*)",
+      "answer": "Nice to meet you"
+    }
+  },
+  {
+    "phrases": {
+      "pattern": "Bye (.*)",
+      "answer": "Bye:("
+    }
+  },
+  {
+    "phrases": {
+      "pattern": "Hi (.*)",
+      "answer": "Hi"
+    }
+  },
+  {
+    "phrases": {
+      "pattern": "How are you (.*)",
+      "answer": "Nice! What about you?"
+    }
+  },
+  {
+    "phrases": {
+      "pattern": "I am \\d years old",
+      "answer": "Oh, you are so young))"
+    }
+  },
+  {
+    "phrases": {
+      "pattern": "I am \\d\\d years old",
+      "answer": "Cool"
+    }
+  },
+  {
+    "phrases": {
+      "pattern": "I am \\d\\d\\d years old",
+      "answer": "Oh, sorry for being rude, but is it possible that you're still alive??!"
+    }
+  },
+  {
+  "phrases": {
+    "pattern": "(Nice|Cool|Great|Good|Perfect)",
+    "answer": "That's great)"
+  }
+},
+  {
+    "phrases": {
+      "pattern": "I am from (.*)",
+      "answer": "Tell me more about your city"
+    }
+  },
+  {
+    "phrases": {
+      "pattern": "I like (.*)",
+      "answer": "Cool! I like it too!"
+    }
+  },
+  {
+    "phrases": {
+      "pattern": "My favourite (.*) is (.*)",
+      "answer": "Wow! What else do you like?"
+    }
+  },
+  {
+    "phrases": {
+      "pattern": "I am good at (.*)",
+      "answer": "What else are you good at?"
+    }
+  },
+  {
+    "phrases": {
+      "pattern": "I study at (.*)",
+      "answer": "What do you study there?"
+    }
+  },
+  {
+    "phrases": {
+      "pattern": "I hate (.*)",
+      "answer": "Well, tastes are tastes."
+    }
+  },
+  {
+    "phrases": {
+      "pattern": "I always (.*)",
+      "answer": "Tell me more about it!"
+    }
+  },
+  {
+    "phrases": {
+      "pattern": "(.*) is my (.*) friend",
+      "answer": "May I be your friend too?"
+    }
+  },
+  {
+    "phrases": {
+      "pattern": "What is the weather like (.*)",
+      "answer": "It's raining( What about the weather in your place?"
+    }
+  }
+]
