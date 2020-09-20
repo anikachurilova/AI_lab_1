@@ -1,3 +1,32 @@
-{
-  "phoneNumbers":[{"type":"Hello", "number":"212 555-1234"},
-                  {"type":"fax",  "number":"212 555-1234"}]}
+[
+  {
+    "phrases": {
+      "pattern": "Hello (.*)",
+      "answer": "Hi"
+    }
+  },
+  {
+    "phrases": {
+      "pattern": "My name is (.*)",
+      "answer": "Nice to meet you"
+    }
+  },
+  {
+    "phrases": {
+      "pattern": "Bye",
+      "answer": "Bye:("
+    }
+  },
+  {
+    "phrases": {
+      "pattern": "Hi",
+      "answer": "Hi"
+    }
+  },
+  {
+    "phrases": {
+      "pattern": "How are you",
+      "answer": "Nice! What about you?"
+    }
+  }
+]
