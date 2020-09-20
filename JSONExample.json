@@ -28,5 +28,29 @@
       "pattern": "How are you",
       "answer": "Nice! What about you?"
     }
+  },
+  {
+    "phrases": {
+      "pattern": "I am \\d years old",
+      "answer": "Oh, you are so young))"
+    }
+  },
+  {
+    "phrases": {
+      "pattern": "I am \\d\\d years old",
+      "answer": "Cool"
+    }
+  },
+  {
+    "phrases": {
+      "pattern": "I am \\d\\d\\d years old",
+      "answer": "Oh, sorry for being rude, but is it possible that you're still alive??!"
+    }
+  },
+  {
+    "phrases": {
+      "pattern": "(Nice|Cool|Great|Good|Perfect)",
+      "answer": "That's great)"
+    }
   }
 ]
