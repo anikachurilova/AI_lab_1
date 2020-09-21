@@ -30,6 +30,7 @@ public class Main {
                     JSONArray employeeList1 = (JSONArray) obj1;
 
                     boolean patternFound= false;
+                    boolean allPatternsMatched = false;
                     if(endOfDialog){
                         break;
                     }
@@ -47,6 +48,7 @@ public class Main {
                             }
                             System.out.println(result.getRight().get((int) (Math.random() * l)) + replacedString(str.toLowerCase()));
                             patternFound=true;
+                            allPatternsMatched = true;
                             break;
                         }
                     }
@@ -58,6 +60,7 @@ public class Main {
                                 int l = result.getRight().toArray().length;
                                 System.out.println(result.getRight().get((int) (Math.random() * l)));
                                 patternFound = true;
+                                allPatternsMatched = true;
                                 break;
                             }
                         }
@@ -68,11 +71,12 @@ public class Main {
 //                                sentence+=words[i]+" ";
 //                            }
                             System.out.println("Do you wanna know "+ replacedString(str.toLowerCase()));
+                            allPatternsMatched = true;
                         }
                     }
-//                    if (patternFound){
-//                        System.out.println("Give me more information, please, I can't fully understand you :(");
-//                    }
+                    if (!allPatternsMatched){
+                        System.out.println("Give me more information, please, I can't fully understand you :(");
+                    }
                 } catch (FileNotFoundException e) {
                     e.printStackTrace();
                 } catch (IOException e) {
