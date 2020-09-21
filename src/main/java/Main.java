@@ -16,6 +16,7 @@ public class Main {
     {
 
         BufferedReader readerr = new BufferedReader(new InputStreamReader(System.in));
+        boolean endOfDialog = false;
         while (true) {
             String str = readerr.readLine().toLowerCase();
             JSONParser jsonParser = new JSONParser();
@@ -29,6 +30,9 @@ public class Main {
                     JSONArray employeeList1 = (JSONArray) obj1;
 
                     boolean patternFound= false;
+                    if(endOfDialog){
+                        break;
+                    }
 
                     for (Object emp : employeeList1) {
                         if (str.matches(parsePatternObject((JSONObject) emp).getKey())) {
@@ -38,6 +42,9 @@ public class Main {
 //                           for(int i=2;i<words.length;i++){
 //                               sentence+=words[i]+" ";
 //                           }
+                            if((result.getRight().get((int) (Math.random() * l))) == "Bye:("){
+                                endOfDialog = true;
+                            }
                             System.out.println(result.getRight().get((int) (Math.random() * l)) + replacedString(str.toLowerCase()));
                             patternFound=true;
                             break;
@@ -63,9 +70,9 @@ public class Main {
                             System.out.println("Do you wanna know "+ replacedString(str.toLowerCase()));
                         }
                     }
-                    if (patternFound){
-                        System.out.println("Give me more information, please, I can't fully understand you :(");
-                    }
+//                    if (patternFound){
+//                        System.out.println("Give me more information, please, I can't fully understand you :(");
+//                    }
                 } catch (FileNotFoundException e) {
                     e.printStackTrace();
                 } catch (IOException e) {
