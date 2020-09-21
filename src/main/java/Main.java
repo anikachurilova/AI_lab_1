@@ -23,7 +23,10 @@ public class Main {
                 for(Object emp : employeeList){
                     if(str.matches(parsePatternObject( (JSONObject) emp ).getKey())){
                         System.out.println(parsePatternObject( (JSONObject) emp ).getValue());
+                    }else {
+                        System.out.println("Do you want me to " + str);
                     }
+                    break;
                 }
 
             } catch (FileNotFoundException e) {
