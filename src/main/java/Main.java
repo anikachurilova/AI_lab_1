@@ -38,7 +38,7 @@ public class Main {
 //                           for(int i=2;i<words.length;i++){
 //                               sentence+=words[i]+" ";
 //                           }
-                            System.out.println(result.getRight().get((int) (Math.random() * l)) + changePronouns(words[1].toLowerCase()) + " " + words[0].toLowerCase() + ".");
+                            System.out.println(result.getRight().get((int) (Math.random() * l)) + replacedString(str.toLowerCase()));
                             patternFound=true;
                             break;
                         }
@@ -56,11 +56,11 @@ public class Main {
                         }
                         if(!patternFound){
                             //питання типу where why whose what
-                            String sentence="";
-                            for(int i=3;i<words.length;i++){
-                                sentence+=words[i]+" ";
-                            }
-                            System.out.println("Do you wanna know "+words[0]+" "+changePronouns(words[2])+" "+sentence);
+//                            String sentence="";
+//                            for(int i=3;i<words.length;i++){
+//                                sentence+=words[i]+" ";
+//                            }
+                            System.out.println("Do you wanna know "+ replacedString(str.toLowerCase()));
                         }
                     }
                     if (patternFound){
@@ -79,6 +79,10 @@ public class Main {
         }
     }
 
+    private static String replacedString(String str){
+        return str.replace("i","you").replace("you","i"). replace("myself","yourself").replace("yourself", "myself")
+                .replace("mine","yours").replace("yours","mine").replace("my","your").replace("your","my").replace("me","you");
+    }
 
     private static Pair<String,JSONArray> parsePatternObject(JSONObject obj)
     {
@@ -93,7 +97,7 @@ public class Main {
 
     }
 
-    private static String changePronouns(String word){
+/*    private static String changePronouns(String word){
         switch (word){
             case "i":
                 word="you";
@@ -127,6 +131,7 @@ public class Main {
         }
         return word;
     }
+    */
 
 //    private static Pair<String,String> parseUnknownPatternObject(JSONObject obj)
 //    {
