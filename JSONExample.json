@@ -1,7 +1,13 @@
 [
+{
+  "phrases": {
+    "pattern": ".*(Mother|Mom|Father|Dad|Brother).*",
+    "answer": "Tell me about your family"
+  }
+},
   {
     "phrases": {
-      "pattern": "Hello (.*)",
+      "pattern": "Hello(.*)",
       "answer": "Hi"
     }
   },
@@ -13,19 +19,19 @@
   },
   {
     "phrases": {
-      "pattern": "Bye (.*)",
+      "pattern": "Bye(.*)",
       "answer": "Bye:("
     }
   },
   {
     "phrases": {
-      "pattern": "Hi (.*)",
+      "pattern": "Hi(.*)",
       "answer": "Hi"
     }
   },
   {
     "phrases": {
-      "pattern": "How are you (.*)",
+      "pattern": "How are you(.*)",
       "answer": "Nice! What about you?"
     }
   },
@@ -49,19 +55,19 @@
   },
   {
   "phrases": {
-    "pattern": "(Nice|Cool|Great|Good|Perfect)",
+    "pattern": ".*(Nice|Cool|Great|Good|Perfect).*",
     "answer": "That's great)"
   }
 },
   {
     "phrases": {
-      "pattern": "I am from (.*)",
+      "pattern": "I am from(.*)",
       "answer": "Tell me more about your city"
     }
   },
   {
     "phrases": {
-      "pattern": "I like (.*)",
+      "pattern": "I like(.*)",
       "answer": "Cool! I like it too!"
     }
   },
@@ -105,12 +111,6 @@
     "phrases": {
       "pattern": "What is the weather (.*)",
       "answer": "It's raining( What about the weather in your place?"
-    }
-  },
-  {
-    "phrases": {
-      "pattern": "(.*?)(Mother|Mom|Father|Dad|Brother) (.*?)",
-      "answer": "Tell me about your family"
     }
   }
 ]

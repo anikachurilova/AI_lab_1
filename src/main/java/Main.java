@@ -1,10 +1,11 @@
-import java.io.*;
 import org.apache.commons.lang3.tuple.MutablePair;
 import org.apache.commons.lang3.tuple.Pair;
-
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
-import org.json.simple.parser.*;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
+
+import java.io.*;
 public class Main {
 
     public static void main(String[] args) throws Exception
@@ -23,10 +24,11 @@ public class Main {
                 for(Object emp : employeeList){
                     if(str.matches(parsePatternObject( (JSONObject) emp ).getKey())){
                         System.out.println(parsePatternObject( (JSONObject) emp ).getValue());
-                    }else {
-                        System.out.println("Do you want me to " + str);
-                    }
-                    break;
+                        break;
+                  }//  else {
+//                       System.out.println("Do you want me to " + str);
+//                    }
+
                 }
 
             } catch (FileNotFoundException e) {
