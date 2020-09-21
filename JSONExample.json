@@ -103,8 +103,14 @@
   },
   {
     "phrases": {
-      "pattern": "What is the weather like (.*)",
+      "pattern": "What is the weather (.*)",
       "answer": "It's raining( What about the weather in your place?"
+    }
+  },
+  {
+    "phrases": {
+      "pattern": "(.*?)(Mother|Mom|Father|Dad|Brother) (.*?)",
+      "answer": "Tell me about your family"
     }
   }
 ]
