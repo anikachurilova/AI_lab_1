@@ -1,110 +1,133 @@
 [
   {
     "phrases": {
-      "pattern": "Hello (.*)",
-      "answer": "Hi"
+      "pattern": "(hello(.*))|(hi(.*))|(hey(.*))",
+      "answer": ["Hi", "Hey","Ohh, hi, haven't seen you for ages"]
     }
   },
   {
     "phrases": {
-      "pattern": "My name is (.*)",
-      "answer": "Nice to meet you"
+      "pattern": "my name is (.*)",
+      "answer": ["Nice to meet you"]
     }
   },
   {
     "phrases": {
-      "pattern": "Bye (.*)",
-      "answer": "Bye:("
+      "pattern": "bye (.*)|see you soon(.*)",
+      "answer": ["Bye:("]
     }
   },
   {
     "phrases": {
-      "pattern": "Hi (.*)",
-      "answer": "Hi"
+      "pattern": "how are you(.*)",
+      "answer": ["Nice! what about you?", "not bad. And you?"]
     }
   },
   {
     "phrases": {
-      "pattern": "How are you (.*)",
-      "answer": "Nice! What about you?"
+      "pattern": "i am \\d years old",
+      "answer": ["Oh, you are so young))"]
     }
   },
   {
     "phrases": {
-      "pattern": "I am \\d years old",
-      "answer": "Oh, you are so young))"
+      "pattern": "i am \\d\\d years old",
+      "answer": ["Cool"]
     }
   },
   {
     "phrases": {
-      "pattern": "I am \\d\\d years old",
-      "answer": "Cool"
-    }
-  },
-  {
-    "phrases": {
-      "pattern": "I am \\d\\d\\d years old",
-      "answer": "Oh, sorry for being rude, but is it possible that you're still alive??!"
+      "pattern": "i am \\d\\d\\d years old",
+      "answer": ["Oh, sorry for being rude, but is it possible that you're still alive??!"]
     }
   },
   {
   "phrases": {
-    "pattern": "(Nice|Cool|Great|Good|Perfect)",
-    "answer": "That's great)"
+    "pattern": "(nice|cool|great|good|perfect)",
+    "answer": ["That's great)"]
   }
 },
   {
     "phrases": {
-      "pattern": "I am from (.*)",
-      "answer": "Tell me more about your city"
+      "pattern": "i am from (.*)",
+      "answer": ["Tell me more about your city"]
     }
   },
   {
     "phrases": {
-      "pattern": "I like (.*)",
-      "answer": "Cool! I like it too!"
+      "pattern": "i like (.*)",
+      "answer": ["Cool! I like it too!"]
     }
   },
   {
     "phrases": {
-      "pattern": "My favourite (.*) is (.*)",
-      "answer": "Wow! What else do you like?"
+      "pattern": "my favourite (.*) is (.*)",
+      "answer": ["Wow! What else do you like?"]
     }
   },
   {
     "phrases": {
-      "pattern": "I am good at (.*)",
-      "answer": "What else are you good at?"
+      "pattern": "i am good at (.*)",
+      "answer": ["What else are you good at?"]
     }
   },
   {
     "phrases": {
-      "pattern": "I study at (.*)",
-      "answer": "What do you study there?"
+      "pattern": "i study at (.*)",
+      "answer": ["What do you study there?"]
     }
   },
   {
     "phrases": {
-      "pattern": "I hate (.*)",
-      "answer": "Well, tastes are tastes."
+      "pattern": "i hate (.*)",
+      "answer": ["Well, tastes are tastes."]
     }
   },
   {
     "phrases": {
-      "pattern": "I always (.*)",
-      "answer": "Tell me more about it!"
+      "pattern": "i always (.*)",
+      "answer": ["Tell me more about it!"]
     }
   },
   {
     "phrases": {
       "pattern": "(.*) is my (.*) friend",
-      "answer": "May I be your friend too?"
+      "answer": ["May I be your friend too?"]
     }
   },
   {
     "phrases": {
-      "pattern": "What is the weather like (.*)",
-      "answer": "It's raining( What about the weather in your place?"
+      "pattern": "what is the weather (.*)",
+      "answer": ["It's raining( What about the weather in your place?"]
+    }
+  },
+  {
+    "phrases": {
+      "pattern": ".*(mother|mom|father|dad|brother|granny|grandmother|grandpa|grandfather).*",
+      "answer": ["Tell me about your family"]
+    }
+  },
+  {
+    "phrases": {
+      "pattern": "(am|is|are).*",
+      "answer": [
+                "Rather yes than no.",
+                "Exactly no.",
+                "Rather no than yes.",
+                "Hmm, I think yes."
+     ]
+    }
+  },
+  {
+    "phrases": {
+      "pattern": ".*(ing).*",
+      "answer": ["Do you really like it?"]
+    }
+  },
+  {
+    "phrases": {
+      "pattern": "Really",
+      "answer": ["Yes"]
     }
   }
 ]
