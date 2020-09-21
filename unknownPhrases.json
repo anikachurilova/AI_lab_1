@@ -1,0 +1,21 @@
+[
+  {
+    "phrases": {
+      "pattern": "(.*)tell me about(.*)",
+      "answer": ["Why do you want to know about "]
+    }
+  },
+  {
+    "phrases": {
+      "pattern": "(can|could|need|should|must)(.*)",
+      "answer": ["Of course ", "I think, ", "In my view, ", "In my opinion, "]
+    }
+  },
+  {
+    "phrases": {
+      "pattern": "(do|does)(.*)",
+      "answer": ["Yes ", "No, "]
+    }
+  }
+
+]

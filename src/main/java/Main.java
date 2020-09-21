@@ -62,9 +62,10 @@ public class Main {
                             }
                             System.out.println("Do you wanna know "+words[0]+" "+changePronouns(words[2])+" "+sentence);
                         }
-
                     }
-
+                    if (patternFound){
+                        System.out.println("Give me more information, please, I can't fully understand you :(");
+                    }
                 } catch (FileNotFoundException e) {
                     e.printStackTrace();
                 } catch (IOException e) {

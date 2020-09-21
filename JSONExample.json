@@ -261,5 +261,11 @@
       "pattern": ".*(server|programming|computer|web|application|Internet).*",
       "answer": "What is your favourite programming language?"
     }
+  },
+  {
+    "phrases": {
+      "pattern": ".*(can|could|would|may|must|should|might|have to|have got to|ougth to|shall|used to).*",
+      "answer": "That's very interesting!"
+    }
   }
 ]
