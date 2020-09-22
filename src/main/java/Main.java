@@ -14,7 +14,7 @@ public class Main {
             "Why are you asking that?",
             "Why do you think so?",
             "Are you sure?",
-            "I don't think this is a good idea",
+            "I don't think this is a good idea to know you about it",
             "I'd like to know this info too!",
             "Do you really want to know that?",
             "Do you think I should know the answer?",
@@ -50,7 +50,7 @@ public class Main {
                            for(int i=2;i<words.length;i++){
                                sentence+=words[i]+" ";
                            }
-                            System.out.println(result.getRight()[((int) (Math.random() * l))] + words[1]+replacedString(words[0])+ sentence);
+                            System.out.println(result.getRight()[((int) (Math.random() * l))] + replacedString(words[1])+" "+replacedString(words[0])+" "+ replacedString(sentence));
                             patternFound=true;
                             break;
                         }

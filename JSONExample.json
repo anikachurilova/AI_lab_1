@@ -241,7 +241,7 @@
 
   {
     "phrases": {
-      "pattern": ".*(can|could|would|may|must|should|might|have to|have got to|ougth to|shall|used to).*(.)",
+      "pattern": ".*(can|could|would|may|must|should|might|have to|have got to|ougth to|shall|used to)(.*)",
       "answer": ["That's very interesting!"]
     }
   },
