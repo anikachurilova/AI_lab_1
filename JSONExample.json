@@ -37,13 +37,13 @@
   },
   {
     "phrases": {
-      "pattern": "Yes(.*)",
+      "pattern": "yes(.*)",
       "answer": "Cool! Tell me more about it!"
     }
   },
   {
     "phrases": {
-      "pattern": "No(.*)",
+      "pattern": "no(.*)",
       "answer": "Why? Tell me more about it."
     }
   },
@@ -134,12 +134,6 @@
                 "Rather no than yes.",
                 "Hmm I think yes."
      ]
-    }
-  },
-  {
-    "phrases": {
-      "pattern": ".*(ing).*",
-      "answer": ["Do you really like it?"]
     }
   },
   {
@@ -260,6 +254,18 @@
     "phrases": {
       "pattern": ".*(can|could|would|may|must|should|might|have to|have got to|ougth to|shall|used to).*",
       "answer": "That's very interesting!"
+    }
+  },
+  {
+    "phrases": {
+      "pattern": ".*(ing).*",
+      "answer": ["Do you really like it?"]
+    }
+  },
+  {
+    "phrases": {
+      "pattern": "cold(.*)|hot(.*)|windy(.*)|freezing(.*)",
+      "answer": ["Do you like it?"]
     }
   }
 ]
