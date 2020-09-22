@@ -25,7 +25,7 @@
   },
   {
     "phrases": {
-      "pattern": "how are you(.*)",
+      "pattern": "how are you(.*)|what's up(.*)",
       "answer": ["Nice! what about you?", "not bad. And you?"]
     }
   },
@@ -73,12 +73,6 @@
   },
   {
     "phrases": {
-      "pattern": "i like (.*)",
-      "answer": ["Cool! I like it too!"]
-    }
-  },
-  {
-    "phrases": {
       "pattern": "my favourite (.*) is (.*)",
       "answer": ["Wow! What else do you like?"]
     }
@@ -93,18 +87,6 @@
     "phrases": {
       "pattern": "i study at (.*)",
       "answer": ["What do you study there?"]
-    }
-  },
-  {
-    "phrases": {
-      "pattern": "i hate (.*)",
-      "answer": ["Well tastes are tastes."]
-    }
-  },
-  {
-    "phrases": {
-      "pattern": "i always (.*)",
-      "answer": ["Tell me more about it!"]
     }
   },
   {
@@ -267,6 +249,24 @@
     "phrases": {
       "pattern": "cold(.*)|hot(.*)|windy(.*)|freezing(.*)",
       "answer": ["Do you like it?"]
+    }
+  },
+  {
+    "phrases": {
+      "pattern": "i hate (.*)",
+      "answer": ["Well tastes are tastes."]
+    }
+  },
+  {
+    "phrases": {
+      "pattern": "i always (.*)",
+      "answer": ["Tell me more about it!"]
+    }
+  },
+  {
+    "phrases": {
+      "pattern": "i like (.*)",
+      "answer": ["Cool! I like it too!"]
     }
   }
 ]
