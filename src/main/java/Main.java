@@ -35,18 +35,19 @@ public class Main {
                         break;
                     }
 
+
                     for (Object emp : employeeList1) {
                         if (str.matches(parsePatternObject((JSONObject) emp).getKey())) {
-                            Pair<String, JSONArray> result = parsePatternObject((JSONObject) emp);
-                            int l = result.getRight().toArray().length;
+                            Pair<String, String[]> result = parsePatternObject((JSONObject) emp);
+                            int l = result.getRight().length;
                             //    String sentence="";
 //                           for(int i=2;i<words.length;i++){
 //                               sentence+=words[i]+" ";
 //                           }
-                            if((result.getRight().get((int) (Math.random() * l))) == "Bye:("){
+                            if((result.getRight()[((int) (Math.random() * l))]) == "Bye:("){
                                 endOfDialog = true;
                             }
-                            System.out.println(result.getRight().get((int) (Math.random() * l)) + replacedString(str.toLowerCase()));
+                            System.out.println(result.getRight()[((int) (Math.random() * l))] + replacedString(str.toLowerCase()));
                             patternFound=true;
                             allPatternsMatched = true;
                             break;
@@ -56,9 +57,9 @@ public class Main {
                         for (Object emp : employeeList) {
                             //якщо є щось простеньке по шаблону
                             if (str.matches(parsePatternObject((JSONObject) emp).getKey())) {
-                                Pair<String, JSONArray> result = parsePatternObject((JSONObject) emp);
-                                int l = result.getRight().toArray().length;
-                                System.out.println(result.getRight().get((int) (Math.random() * l)));
+                                Pair<String, String[]> result = parsePatternObject((JSONObject) emp);
+                                int l = result.getRight().length;
+                                System.out.println(result.getRight()[((int) (Math.random() * l))]);
                                 patternFound = true;
                                 allPatternsMatched = true;
                                 break;
@@ -95,17 +96,18 @@ public class Main {
                 .replace("mine","yours").replace("yours","mine").replace("my","your").replace("your","my").replace("me","you");
     }
 
-    private static Pair<String,JSONArray> parsePatternObject(JSONObject obj)
-    {
+    private static Pair<String,String[]> parsePatternObject(JSONObject obj) throws ParseException {
         JSONObject patternObject = (JSONObject) obj.get("phrases");
-       // System.out.println(patternObject);
+        // System.out.println(patternObject);
         String pattern = (String) patternObject.get("pattern");
 
-        JSONArray answer = (JSONArray) patternObject.get("answer");
 
-        Pair<String,JSONArray> p = new MutablePair<>(pattern,answer);
+        Object ob  = patternObject.get("answer");
+        String[] array = ob.toString().replace("[","").replace("]","").replace("\"","").split(",");
+
+        //JSONArray answer = (JSONArray) patternObject.get("answer");
+        Pair<String,String[]> p = new MutablePair<>(pattern,array);
         return p;
-
     }
 
 /*    private static String changePronouns(String word){

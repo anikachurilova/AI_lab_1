@@ -8,7 +8,7 @@
   {
     "phrases": {
       "pattern": "(hello(.*))|(hi(.*))|(hey(.*))",
-      "answer": ["Hi", "Hey","Ohh, hi, haven't seen you for ages"]
+      "answer": ["Hi", "Hey","Ohh hi haven't seen you for ages"]
     }
   },
   {
@@ -38,7 +38,7 @@
   {
     "phrases": {
       "pattern": "i am \\d years old",
-      "answer": ["Oh, you are so young))"]
+      "answer": ["Oh you are so young))"]
     }
   },
   {
@@ -62,7 +62,7 @@
   {
     "phrases": {
       "pattern": "i am \\d\\d\\d years old",
-      "answer": ["Oh, sorry for being rude, but is it possible that you're still alive??!"]
+      "answer": ["Oh sorry for being rude but is it possible that you're still alive??!"]
     }
   },
   {
@@ -104,7 +104,7 @@
   {
     "phrases": {
       "pattern": "i hate (.*)",
-      "answer": ["Well, tastes are tastes."]
+      "answer": ["Well tastes are tastes."]
     }
   },
   {
@@ -138,7 +138,7 @@
                 "Rather yes than no.",
                 "Exactly no.",
                 "Rather no than yes.",
-                "Hmm, I think yes."
+                "Hmm I think yes."
      ]
     }
   },
