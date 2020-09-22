@@ -38,8 +38,6 @@ public class Main {
                     JSONArray employeeList1 = (JSONArray) obj1;
 
                     boolean patternFound= false;
-
-                    //модальні і загальні питання
                     for (Object emp : employeeList1) {
                         if (str.matches(parsePatternObject((JSONObject) emp).getKey())) {
                             Pair<String, String[]> result = parsePatternObject((JSONObject) emp);
@@ -57,7 +55,6 @@ public class Main {
                             break;
                         }
                     }
-                    //якщо є шаблон звичайний
                     if(!patternFound) {
                         for (Object emp : employeeList) {
                             if (str.matches(parsePatternObject((JSONObject) emp).getKey())) {
@@ -74,7 +71,6 @@ public class Main {
                     }
 
                     if(!patternFound){
-
                         System.out.println(randomQuestions[(int)(Math.random()*8)]);
                     }
 
@@ -98,17 +94,13 @@ public class Main {
 
     private static Pair<String,String[]> parsePatternObject(JSONObject obj) throws ParseException {
         JSONObject patternObject = (JSONObject) obj.get("phrases");
-        // System.out.println(patternObject);
-        String pattern = (String) patternObject.get("pattern");
 
+        String pattern = (String) patternObject.get("pattern");
 
         Object ob  = patternObject.get("answer");
         String[] array = ob.toString().replace("[","").replace("]","").replace("\"","").split(",");
 
-        //JSONArray answer = (JSONArray) patternObject.get("answer");
         Pair<String,String[]> p = new MutablePair<>(pattern,array);
         return p;
     }
-
-
 }
