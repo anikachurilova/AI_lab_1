@@ -2,7 +2,7 @@
 {
   "phrases": {
     "pattern": ".*(mother|mom|father|dad|brother|bro|sister|sis|uncle|aunt|grandma|grandpa).*",
-    "answer": "Tell me about your family"
+    "answer": ["Tell me about your family"]
   }
 },
   {
@@ -38,13 +38,13 @@
   {
     "phrases": {
       "pattern": "yes(.*)",
-      "answer": "Cool! Tell me more about it!"
+      "answer": ["Cool! Tell me more about it!"]
     }
   },
   {
     "phrases": {
       "pattern": "no(.*)",
-      "answer": "Why? Tell me more about it."
+      "answer": ["Why? Tell me more about it."]
     }
   },
   {
@@ -61,7 +61,7 @@
   },
   {
   "phrases": {
-    "pattern": "(nice|cool|great|good|perfect)",
+    "pattern": "(nice|cool|great|good|perfect|fine)",
     "answer": ["That's great)"]
   }
 },
@@ -109,13 +109,13 @@
   },
   {
     "phrases": {
-      "pattern": "(.*)is my (.*) friend",
+      "pattern": "(.*) is my (.*) friend",
       "answer": ["May I be your friend too?"]
     }
   },
   {
     "phrases": {
-      "pattern": "what is the weather(.*)",
+      "pattern": "what is the weather (.*)",
       "answer": ["It's raining( What about the weather in your place?"]
     }
   },
@@ -145,121 +145,122 @@
   {
   "phrases": {
     "pattern": ".*(evening|morning|day|night).*",
-    "answer": "What time of a day do you like most?"
+    "answer": ["What time of a day do you like most?"]
   }
 },
   {
   "phrases": {
     "pattern": ".*(pancake|sushi|pizza|bread|cookies|meat).*",
-    "answer": "Tell me more about your favourite food"
+    "answer": ["Tell me more about your favourite food"]
   }
 },
   {
     "phrases": {
       "pattern": ".*(headache|bellyache|hurt|pain|sore|backache|teethache).*",
-      "answer": "You should see a doctor"
+      "answer": ["You should see a doctor"]
     }
   },
   {
     "phrases": {
       "pattern": ".*(dancing|singing|painting|sport|reading|travelling|photography|cooking).*",
-      "answer": "Tell me about your hobby"
+      "answer": ["Tell me about your hobby"]
     }
   },
   {
     "phrases": {
       "pattern": ".*(football|basketball|running|jumping|badminton|cycling|golf|skiing|boxing|swimming|wrestling).*",
-      "answer": "What is your favourite sport?"
+      "answer": ["What is your favourite sport?"]
     }
   },
   {
     "phrases": {
       "pattern": ".*(summer|winter|spring|fall|autumn).*",
-      "answer": "Tell me about your favourite season on the year"
+      "answer": ["Tell me about your favourite season on the year"]
     }
   },
   {
     "phrases": {
       "pattern": ".*(santa|christmas|birthday|new year|easter|valentines's).*",
-      "answer": "What is your favourite holiday?"
+      "answer": ["What is your favourite holiday?"]
     }
   },
   {
     "phrases": {
       "pattern": ".*(cat|dog|rabbit|parrot|chinchilla|hamster|turtle).*",
-      "answer": "Do you have a pet?"
+      "answer": ["Do you have a pet?"]
     }
   },
   {
     "phrases": {
       "pattern": ".*(london|paris|kyiv|new york|los angeles|smila|amsterdam|riga|tokyo|berlin|oslo|palermo).*",
-      "answer": "What is the city of your dreams?"
+      "answer": ["What is the city of your dreams?"]
     }
   },
   {
     "phrases": {
       "pattern": ".*(instagram|telegram|whatsApp|viber|facebook).*",
-      "answer": "How much time do you spend in the social media?"
+      "answer": ["How much time do you spend in the social media?"]
     }
   },
   {
     "phrases": {
       "pattern": ".*(sun|rain|wind|snow|cloud|fog|warm|hot|frosty).*",
-      "answer": "Tell me about your favourite weather?"
+      "answer": ["Tell me about your favourite weather?"]
     }
   },
   {
     "phrases": {
       "pattern": ".*(music|guitar|piano|sing|playlist).*",
-      "answer": "What kind of music do you listen?"
+      "answer": ["What kind of music do you listen?"]
     }
   },
   {
     "phrases": {
       "pattern": ".*(sea|ocean|river|lake|pool).*",
-      "answer": "Can you swim?"
+      "answer": ["Can you swim?"]
     }
   },
   {
     "phrases": {
       "pattern": ".*(red|pink|black|yellow|white|green|gray|magenta|blue|purple|orange|brown).*",
-      "answer": "Tell me about your favourite color"
-    }
-  },
-  {
-    "phrases": {
-      "pattern": ".*(pants|skirt|jacket|yellow|sweater|pullover|T-shirt|jeans|hat|coat|shoes|sneakers|sandals).*",
-      "answer": "What kind of shoes os your favourite?"
+      "answer": ["Tell me about your favourite color"]
     }
   },
   {
     "phrases": {
       "pattern": ".*(flower|rose|peonies|chamomile|lilies|carnation|violet|snowdrop|tulip|iris).*",
-      "answer": "Tell me about your favourite flower?"
+      "answer": ["Tell me about your favourite flower?"]
     }
   },
   {
     "phrases": {
       "pattern": ".*(actor|film|movie|hollywood|TV|cartoon|series).*",
-      "answer": "What do you like to watch on Netflix?"
+      "answer": ["What do you like to watch on Netflix?"]
     }
   },
   {
     "phrases": {
       "pattern": ".*(server|programming|computer|web|application|Internet).*",
-      "answer": "What is your favourite programming language?"
+      "answer": ["What is your favourite programming language?"]
     }
   },
   {
     "phrases": {
-      "pattern": ".*(can|could|would|may|must|should|might|have to|have got to|ougth to|shall|used to).*",
-      "answer": "That's very interesting!"
+      "pattern": "why(.*)",
+      "answer": ["Hmm don't know. What do you think about it?"]
     }
   },
   {
     "phrases": {
-      "pattern": ".*(ing).*",
-      "answer": ["Do you really like it?"]
+      "pattern": "whose(.*)",
+      "answer": ["I have no idea. Maybe you know ?"]
+    }
+  },
+
+  {
+    "phrases": {
+      "pattern": ".*(can|could|would|may|must|should|might|have to|have got to|ougth to|shall|used to).*(.)",
+      "answer": ["That's very interesting!"]
     }
   },
   {
