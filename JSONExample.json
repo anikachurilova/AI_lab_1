@@ -1,7 +1,7 @@
 [
 {
   "phrases": {
-    "pattern": ".*(Mother|Mom|Father|Dad|Brother|Bro|Sister|Sis|Uncle|Aunt|Grandma|Grandpa).*",
+    "pattern": ".*(mother|mom|father|dad|brother|bro|sister|sis|uncle|aunt|grandma|grandpa).*",
     "answer": "Tell me about your family"
   }
 },
@@ -19,7 +19,7 @@
   },
   {
     "phrases": {
-      "pattern": "bye (.*)|see you soon(.*)",
+      "pattern": "bye(.*)|see you soon(.*)",
       "answer": ["Bye:("]
     }
   },
@@ -27,12 +27,6 @@
     "phrases": {
       "pattern": "how are you(.*)",
       "answer": ["Nice! what about you?", "not bad. And you?"]
-    }
-  },
-  {
-    "phrases": {
-      "pattern": "Bye (.*)",
-      "answer": "Bye:("
     }
   },
   {
@@ -115,13 +109,13 @@
   },
   {
     "phrases": {
-      "pattern": "(.*) is my (.*) friend",
+      "pattern": "(.*)is my (.*) friend",
       "answer": ["May I be your friend too?"]
     }
   },
   {
     "phrases": {
-      "pattern": "what is the weather (.*)",
+      "pattern": "what is the weather(.*)",
       "answer": ["It's raining( What about the weather in your place?"]
     }
   },
@@ -150,73 +144,73 @@
   },
   {
     "phrases": {
-      "pattern": "Really",
+      "pattern": "really",
       "answer": ["Yes"]
     }
   },
   {
   "phrases": {
-    "pattern": ".*(Evening|Morning|Day|Night).*",
+    "pattern": ".*(evening|morning|day|night).*",
     "answer": "What time of a day do you like most?"
   }
 },
   {
   "phrases": {
-    "pattern": ".*(Pancake|Sushi|Pizza|Bread|Cookies|Meat).*",
+    "pattern": ".*(pancake|sushi|pizza|bread|cookies|meat).*",
     "answer": "Tell me more about your favourite food"
   }
 },
   {
     "phrases": {
-      "pattern": ".*(Headache|Bellyache|Hurt|Pain|Sore|Backache|Teethache).*",
+      "pattern": ".*(headache|bellyache|hurt|pain|sore|backache|teethache).*",
       "answer": "You should see a doctor"
     }
   },
   {
     "phrases": {
-      "pattern": ".*(Dancing|Singing|Painting|Sport|Reading|Travelling|Photography|Cooking).*",
+      "pattern": ".*(dancing|singing|painting|sport|reading|travelling|photography|cooking).*",
       "answer": "Tell me about your hobby"
     }
   },
   {
     "phrases": {
-      "pattern": ".*(Football|Basketball|Running|Jumping|Badminton|Cycling|Golf|Skiing|Boxing|Swimming|Wrestling).*",
+      "pattern": ".*(football|basketball|running|jumping|badminton|cycling|golf|skiing|boxing|swimming|wrestling).*",
       "answer": "What is your favourite sport?"
     }
   },
   {
     "phrases": {
-      "pattern": ".*(Summer|Winter|Spring|Fall|Autumn).*",
+      "pattern": ".*(summer|winter|spring|fall|autumn).*",
       "answer": "Tell me about your favourite season on the year"
     }
   },
   {
     "phrases": {
-      "pattern": ".*(Santa|Christmas|Birthday|New year|Easter|Valentines's).*",
+      "pattern": ".*(santa|christmas|birthday|new year|easter|valentines's).*",
       "answer": "What is your favourite holiday?"
     }
   },
   {
     "phrases": {
-      "pattern": ".*(Cat|Dog|Rabbit|Parrot|Chinchilla|Hamster|Turtle).*",
+      "pattern": ".*(cat|dog|rabbit|parrot|chinchilla|hamster|turtle).*",
       "answer": "Do you have a pet?"
     }
   },
   {
     "phrases": {
-      "pattern": ".*(London|Paris|Kyiv|New York|Los Angeles|Smila|Amsterdam|Riga|Tokyo|Berlin|Oslo|Palermo).*",
+      "pattern": ".*(london|paris|kyiv|new york|los angeles|smila|amsterdam|riga|tokyo|berlin|oslo|palermo).*",
       "answer": "What is the city of your dreams?"
     }
   },
   {
     "phrases": {
-      "pattern": ".*(Instagram|Telegram|WhatsApp|Viber|Facebook).*",
+      "pattern": ".*(instagram|telegram|whatsApp|viber|facebook).*",
       "answer": "How much time do you spend in the social media?"
     }
   },
   {
     "phrases": {
-      "pattern": ".*(Sun|Rain|Wind|Snow|Cloud|Fog|Warm|Hot|Frosty).*",
+      "pattern": ".*(sun|rain|wind|snow|cloud|fog|warm|hot|frosty).*",
       "answer": "Tell me about your favourite weather?"
     }
   },

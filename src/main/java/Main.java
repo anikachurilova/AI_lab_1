@@ -17,7 +17,7 @@ public class Main {
 
         BufferedReader readerr = new BufferedReader(new InputStreamReader(System.in));
         boolean endOfDialog = false;
-        while (true) {
+        while (!endOfDialog) {
             String str = readerr.readLine().toLowerCase();
             JSONParser jsonParser = new JSONParser();
             try (FileReader reader = new FileReader("JSONExample.json")) {
@@ -31,10 +31,9 @@ public class Main {
 
                     boolean patternFound= false;
                     boolean allPatternsMatched = false;
-                    if(endOfDialog){
-                        break;
-                    }
-
+//                    if(endOfDialog){
+//                        break;
+//                    }
 
                     for (Object emp : employeeList1) {
                         if (str.matches(parsePatternObject((JSONObject) emp).getKey())) {
@@ -44,7 +43,7 @@ public class Main {
 //                           for(int i=2;i<words.length;i++){
 //                               sentence+=words[i]+" ";
 //                           }
-                            if((result.getRight()[((int) (Math.random() * l))]) == "Bye:("){
+                            if(result.getRight()[((int) (Math.random() * l))].equals("Bye:(")){
                                 endOfDialog = true;
                             }
                             System.out.println(result.getRight()[((int) (Math.random() * l))] + replacedString(str.toLowerCase()));
@@ -62,6 +61,9 @@ public class Main {
                                 System.out.println(result.getRight()[((int) (Math.random() * l))]);
                                 patternFound = true;
                                 allPatternsMatched = true;
+                                if(result.getRight()[((int) (Math.random() * l))].equals("Bye:(")){
+                                    endOfDialog = true;
+                                }
                                 break;
                             }
                         }
@@ -71,6 +73,7 @@ public class Main {
 //                            for(int i=3;i<words.length;i++){
 //                                sentence+=words[i]+" ";
 //                            }
+
                             System.out.println("Do you wanna know "+ replacedString(str.toLowerCase()));
                             allPatternsMatched = true;
                         }
